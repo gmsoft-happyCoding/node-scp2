@@ -1,7 +1,7 @@
 {
-  "name": "scp2",
-  "version": "0.5.0",
-  "description": "A pure javascript scp program based on ssh2.",
+  "name": "scp2-gmsoft",
+  "version": "0.1.0",
+  "description": "fork scp2.",
   "author": "Hsiaoming Yang <lepture@me.com>",
   "homepage": "https://github.com/lepture/node-scp2",
   "keywords": [
@@ -11,11 +11,14 @@
     "remote",
     "ssh2"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "dependencies": {
     "async": "~0.9.0",
     "glob": "~7.0.3",
     "lodash": "~4.17.11",
-    "ssh2": "^0.6.0"
+    "ssh2": "^0.8.5"
   },
   "repository": {
     "type": "git",

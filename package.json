@@ -4,6 +4,9 @@
   "description": "fork scp2.",
   "author": "Hsiaoming Yang <lepture@me.com>",
   "homepage": "https://github.com/lepture/node-scp2",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "keywords": [
     "ssh",
     "scp",

@@ -1,6 +1,6 @@
 {
   "name": "scp2-gmsoft",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "fork scp2.",
   "author": "Hsiaoming Yang <lepture@me.com>",
   "homepage": "https://github.com/lepture/node-scp2",
@@ -11,14 +11,11 @@
     "remote",
     "ssh2"
   ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
-  },
   "dependencies": {
     "async": "~0.9.0",
     "glob": "~7.0.3",
-    "lodash": "~4.17.11",
-    "ssh2": "^0.8.5"
+    "lodash": "^4.17.11",
+    "ssh2": "0.8.5"
   },
   "repository": {
     "type": "git",

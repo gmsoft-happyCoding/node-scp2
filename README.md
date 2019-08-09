@@ -4,22 +4,22 @@ A pure javascript secure copy program based on ssh2.
 
 -----
 
-scp2 is greatly powered by [ssh2](https://github.com/mscdex/ssh2), implementing `scp` in an `sftp` way.
+scp2 is greatly powered by [ssh2](https://github.com/mscdex/ssh2), implemented the `scp` in a `sftp` way.
 
-It is written in pure javascript, and should work on every OS, even Windows. Nodejs (v0.8.7 or newer) is required to use this library.
+It is written in pure javascript, and should work on every OS, even Windows. Nodejs (v0.8.7 or newer) is required to make it work.
 
 
 ## Install
 
-You can either use it as a library, or via CLI. For Windows users who miss scp in the unix/linux world, you can get it with:
+You can either use it as a library, or a program. For Windows users who miss scp on unix/linux world, you can get the command line now:
 
     $ npm install scp2 -g
 
-You will get a command line tool `scp2`, now let's try:
+You will get a command line tool `scp2`, and let's try:
 
     $ scp2 -h
 
-To get the development version from the ninja channel:
+Get the development version from ninja channel:
 
     $ npm install scp2@ninja
 
@@ -47,7 +47,7 @@ client.scp('file.txt', 'admin:password@example.com:port:/home/admin/', function(
 })
 ```
 
-Copy a file to the server specifying the destination as an object:
+Copy a file to the server in another way:
 
 ```js
 client.scp('file.txt', {
@@ -79,14 +79,14 @@ client.scp('data/*.js', 'admin:password@example.com:/home/admin/data/', function
 })
 ```
 
-Download a file from the server:
+Download a file from server:
 
 ```js
 client.scp('admin:password@example.com:/home/admin/file.txt', './', function(err) {
 })
 ```
 
-Download a file from the server specifying the destination as an object:
+Download a file from server in another way:
 
 ```js
 client.scp({
@@ -95,17 +95,6 @@ client.scp({
     password: 'password',
     path: '/home/admin/file.txt'
 }, './', function(err) {})
-```
-
-Login with a private key:
-```js
-client.scp('file.txt', {
-    host: 'example.com',
-    username: 'admin',
-    privateKey: require("fs").readFileSync('path/to/private/key'),
-    passphrase: 'private_key_password',
-    path: '/home/admin/'
-}, function(err) {})
 ```
 
 **TODO**: download via glob pattern.
@@ -119,7 +108,7 @@ Get the client:
 var Client = require('scp2').Client;
 ```
 
-The high level client is an instance of `Client`, but also contains the high level API `scp`.
+The high level client is an instance of `Client`, but it contains the high level API `scp`.
 
 ### Methods
 
@@ -146,12 +135,12 @@ The high level client is an instance of `Client`, but also contains the high lev
   });
   ```
 
-  More on these values at [ssh2](https://github.com/mscdex/ssh2).
+  More on the values at [ssh2](https://github.com/mscdex/ssh2).
 
 
 - **sftp** `function(callback) -> callback(err, sftp)`
 
-  Get the sftp object.
+  Get the sftp.
 
 - **close** `function()`
 
@@ -172,7 +161,7 @@ The high level client is an instance of `Client`, but also contains the high lev
   }, callback)
   ```
 
-  The options object can contain:
+  The options can contain:
 
   - destination
   - content: string or buffer
@@ -189,12 +178,12 @@ The high level client is an instance of `Client`, but also contains the high lev
 
 - **download** `function(src, dest, callback) -> callback(err)`
 
-  download a file from the server to local.
+  download a server file to local.
 
 
 ## Events
 
-You can listen for these events:
+You can listen on these events:
 
 - connect
 - ready

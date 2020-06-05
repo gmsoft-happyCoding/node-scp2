@@ -1,6 +1,6 @@
 {
   "name": "scp2-gmsoft",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "fork scp2.",
   "homepage": "https://github.com/angular-moon/node-scp2",
   "publishConfig": {

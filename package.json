@@ -2,8 +2,7 @@
   "name": "scp2-gmsoft",
   "version": "0.2.0",
   "description": "fork scp2.",
-  "author": "Hsiaoming Yang <lepture@me.com>",
-  "homepage": "https://github.com/lepture/node-scp2",
+  "homepage": "https://github.com/angular-moon/node-scp2",
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
@@ -22,10 +21,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lepture/node-scp2.git"
+    "url": "https://github.com/angular-moon/node-scp2.git"
   },
   "bugs": {
-    "url": "https://github.com/lepture/node-scp2/issues"
+    "url": "https://github.com/angular-moon/node-scp2/issues"
   },
   "devDependencies": {
     "expect.js": "0",
